@@ -25,6 +25,9 @@ var computerChoices = ["a", "b","c","d","e","f","g","h","i","j","k","l","m","n",
      	document.getElementById("losses").innerHTML= lose;
      	document.getElementById("left").innerHTML= guesses;
      }
+     if(guesses === 0){
+     	alert("Game Over");
+     }
  };
        
 
