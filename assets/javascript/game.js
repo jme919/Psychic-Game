@@ -1,4 +1,4 @@
-console.log("its alive")
+console.log("its alive");
 var computerChoices = ["a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
    var win = 0;
    var lose = 0;
@@ -11,7 +11,7 @@ var computerChoices = ["a", "b","c","d","e","f","g","h","i","j","k","l","m","n",
 
      // Determines which key was pressed.
      var userGuess = event.key;
-     document.getElementById("guesses").innerHTML= userGuess;
+     document.getElementById("choices").innerHTML+= event.key;
 
      // Randomly chooses a choice from the options array. This is the Computer's guess.
      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -21,9 +21,11 @@ var computerChoices = ["a", "b","c","d","e","f","g","h","i","j","k","l","m","n",
        document.getElementById("wins").innerHTML= win;
      }else if (computerGuess != userGuess)  {
      	lose +=1;
+     	guesses -=1;
      	document.getElementById("losses").innerHTML= lose;
+     	document.getElementById("left").innerHTML= guesses;
      }
- }
+ };
        
 
 
