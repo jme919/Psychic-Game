@@ -1,9 +1,13 @@
 body{
 	background-color: #808080;
+	
+	
 }
 
 h1{
 font-size: 50px;
+text-decoration: underline;
+text-align: center;
 }
 
 h3{
@@ -12,4 +16,12 @@ h3{
 
 h4{
 	font-size: 25px;
+}
+#state{
+	text-align: center;
+}
+
+.icon{
+	height: 50px;
+	width: 50px;
 }
